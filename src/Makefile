@@ -132,7 +132,7 @@ $(EXT_SUBDIRS) : checkversion kaldi.mk mklibdir ext_depend
 ### Dependency list ###
 # this is necessary for correct parallel compilation
 #1)The tools depend on all the libraries
-bin fstbin gmmbin fgmmbin sgmm2bin featbin cudafeatbin nnetbin nnet2bin nnet3bin chainbin latbin ivectorbin lmbin kwsbin online2bin rnnlmbin cudadecoderbin: \
+bin fstbin gmmbin featbin latbin: \
  base matrix util feat cudafeat tree gmm transform sgmm2 fstext hmm \
  lm decoder lat cudamatrix nnet nnet2 nnet3 ivector chain kws online2 rnnlm \
  cudadecoder
