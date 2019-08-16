@@ -1348,7 +1348,7 @@ if [ -n "$ENV_LDLIBS" ]; then echo "LDLIBS += $ENV_LDLIBS" >> kaldi.mk; fi
 
 # We check for slow exp implementation just before we exit. This check uses
 # and possibly modifies the kaldi.mk file that we just generated.
-check_for_slow_expf;
+# check_for_slow_expf;
 echo "Kaldi has been successfully configured. To compile:
 
   make -j clean depend; make -j <NCPU>
