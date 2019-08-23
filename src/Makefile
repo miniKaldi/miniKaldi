@@ -133,8 +133,8 @@ $(EXT_SUBDIRS) : checkversion kaldi.mk mklibdir ext_depend
 # this is necessary for correct parallel compilation
 #1)The tools depend on all the libraries
 bin fstbin gmmbin featbin latbin: \
- base matrix util feat tree gmm transform sgmm2 fstext hmm \
- lm decoder lat nnet nnet2 nnet3 ivector chain kws online2 rnnlm 
+ base matrix util feat tree gmm transform fstext hmm \
+ decoder lat 
 
 #2)The libraries have inter-dependencies
 base: base/.depend.mk
