@@ -4,9 +4,15 @@
 
 SHELL := /bin/bash
 
-SUBDIRS = bin featbin fstbin gmmbin latbin
+SUBDIRS = base matrix util feat tree gmm transform \
+          fstext hmm decoder lat \
+          bin fstbin gmmbin featbin \
+          latbin 
 
-MEMTESTDIRS = bin featbin fstbin gmmbin latbin
+MEMTESTDIRS = base matrix util feat tree gmm transform \
+          fstext hmm decoder lat \
+          bin fstbin gmmbin featbin \
+          latbin  
 
 SUBDIRS_LIB = $(filter-out %bin, $(SUBDIRS))
 
@@ -138,5 +144,13 @@ bin fstbin gmmbin featbin latbin: \
 
 #2)The libraries have inter-dependencies
 base: base/.depend.mk
+matrix: base
+util: base matrix
 feat: base matrix util gmm transform tree
+tree: base util matrix
 gmm: base util matrix tree
+transform: base util matrix gmm tree
+fstext: base util matrix tree
+hmm: base tree matrix util
+decoder: base util matrix gmm hmm tree transform lat fstext
+lat: base util hmm tree matrix
