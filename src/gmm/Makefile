@@ -9,7 +9,7 @@ TESTFILES = diag-gmm-test mle-diag-gmm-test \
 
 OBJFILES = diag-gmm.o diag-gmm-normal.o mle-diag-gmm.o am-diag-gmm.o \
            mle-am-diag-gmm.o  \
-					 model-common.o decodable-am-diag-gmm.o model-test-common.o \
+					 model-common.o decodable-am-diag-gmm.o 
 
 LIBNAME = kaldi-gmm
 
