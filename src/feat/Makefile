@@ -5,7 +5,7 @@ all:
 include ../kaldi.mk
 
 TESTFILES = feature-mfcc-test  \
-         feature-functions-test pitch-functions-test feature-sdc-test \
+         feature-functions-test \
          resample-test  wave-reader-test
 
 OBJFILES = feature-functions.o feature-mfcc.o \
