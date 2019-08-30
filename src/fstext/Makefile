@@ -14,10 +14,9 @@ TESTFILES = determinize-star-test \
       pre-determinize-test trivial-factor-weight-test \
       context-fst-test factor-test table-matcher-test fstext-utils-test \
       remove-eps-local-test lattice-weight-test  \
-      determinize-lattice-test lattice-utils-test deterministic-fst-test \
-      push-special-test epsilon-property-test prune-special-test
+      determinize-lattice-test lattice-utils-test deterministic-fst-test 
 
-OBJFILES = push-special.o kaldi-fst-io.o context-fst.o grammar-context-fst.o
+OBJFILES = kaldi-fst-io.o context-fst.o grammar-context-fst.o
 
 
 LIBNAME = kaldi-fstext
