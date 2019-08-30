@@ -6,7 +6,7 @@ include ../kaldi.mk
 TESTFILES = hmm-topology-test hmm-utils-test transition-model-test posterior-test
 
 OBJFILES = hmm-topology.o transition-model.o hmm-utils.o tree-accu.o \
-        posterior.o hmm-test-utils.o
+        posterior.o
 
 LIBNAME = kaldi-hmm
 ADDLIBS = ../tree/kaldi-tree.a ../util/kaldi-util.a ../matrix/kaldi-matrix.a \
