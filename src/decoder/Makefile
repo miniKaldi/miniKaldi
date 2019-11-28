@@ -6,7 +6,8 @@ include ../kaldi.mk
 TESTFILES =
 
 OBJFILES = training-graph-compiler.o lattice-simple-decoder.o lattice-faster-decoder.o \
-   decoder-wrappers.o grammar-fst.o faster-decoder.o
+   lattice-faster-online-decoder.o simple-decoder.o faster-decoder.o \
+   decoder-wrappers.o grammar-fst.o decodable-matrix.o
 
 LIBNAME = kaldi-decoder
 
