@@ -14,7 +14,7 @@ TESTFILES = matrix-lib-test sparse-matrix-test #matrix-lib-speed-test
 
 OBJFILES = kaldi-matrix.o kaldi-vector.o packed-matrix.o sp-matrix.o tp-matrix.o \
            matrix-functions.o  srfft.o compressed-matrix.o \
-           sparse-matrix.o optimization.o kaldi-blas.o
+           sparse-matrix.o optimization.o
 
 LIBNAME = kaldi-matrix
 
