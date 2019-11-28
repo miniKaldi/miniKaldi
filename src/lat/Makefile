@@ -10,7 +10,7 @@ TESTFILES = kaldi-lattice-test  \
 
 OBJFILES = kaldi-lattice.o lattice-functions.o word-align-lattice.o \
 	   sausages.o \
-       determinize-lattice-pruned.o 
+       push-lattice.o minimize-lattice.o determinize-lattice-pruned.o 
 
 LIBNAME = kaldi-lat
 
