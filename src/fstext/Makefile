@@ -16,7 +16,7 @@ TESTFILES = determinize-star-test \
       remove-eps-local-test lattice-weight-test  \
       determinize-lattice-test lattice-utils-test deterministic-fst-test 
 
-OBJFILES = kaldi-fst-io.o grammar-context-fst.o 
+OBJFILES = kaldi-fst-io.o grammar-context-fst.o context-fst.o
 
 
 LIBNAME = kaldi-fstext
