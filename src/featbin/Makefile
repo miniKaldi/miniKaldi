@@ -4,7 +4,7 @@ EXTRA_CXXFLAGS = -Wno-sign-compare
 include ../kaldi.mk
 
 BINFILES = add-deltas apply-cmvn compute-cmvn-stats compute-cmvn-stats-two-channel compute-mfcc-feats \
-		   copy-feats extract-segments feat-to-dim modify-cmvn-stats
+		   copy-feats extract-segments feat-to-dim modify-cmvn-stats subset-feats
 
 OBJFILES =
 
