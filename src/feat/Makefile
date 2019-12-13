@@ -6,12 +6,12 @@ include ../kaldi.mk
 
 TESTFILES = feature-mfcc-test  \
          feature-functions-test \
-         resample-test  wave-reader-test
+         resample-test  wave-reader-test feature-plp-test
 
 OBJFILES = feature-functions.o feature-mfcc.o \
            mel-computations.o wave-reader.o \
            resample.o \
-           feature-window.o
+           feature-window.o feature-plp.o
 
 LIBNAME = kaldi-feat
 
