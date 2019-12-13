@@ -4,7 +4,7 @@ all:
 EXTRA_CXXFLAGS = -Wno-sign-compare
 include ../kaldi.mk
 
-BINFILES = arpa2fst
+BINFILES = arpa2fst arpa-to-const-arpa
 
 OBJFILES =
 
