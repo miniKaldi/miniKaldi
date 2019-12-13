@@ -9,7 +9,7 @@ TESTFILES = ivector-extractor-test
 
 OBJFILES = ivector-extractor.o 
 
-LIBNAME = kaldi-ivector
+LIBNAME = 
 
 ADDLIBS = ../transform/kaldi-transform.a ../gmm/kaldi-gmm.a \
           ../tree/kaldi-tree.a ../util/kaldi-util.a ../matrix/kaldi-matrix.a \
