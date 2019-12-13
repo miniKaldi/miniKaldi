@@ -5,7 +5,8 @@ EXTRA_CXXFLAGS = -Wno-sign-compare
 include ../kaldi.mk
 
 BINFILES = gmm-acc-stats-ali gmm-align-compiled gmm-boost-silence gmm-est gmm-init-model \
-		   gmm-init-mono gmm-latgen-faster gmm-latgen-faster-parallel gmm-mixup gmm-sum-accs
+		   gmm-init-mono gmm-latgen-faster gmm-latgen-faster-parallel gmm-mixup gmm-sum-accs \
+		   gmm-info
 
 OBJFILES =
 
